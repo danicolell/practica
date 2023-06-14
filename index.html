@@ -1,9 +1,9 @@
-<!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="/assets/main.js" defer></script>
     <title>Dt Money</title>
     <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -15,7 +15,7 @@
     <header> 
         <div class="container">
             <img class="logo" src="images/Logo.svg" alt="Logo">
-            <button class="btn__primary">Nueva transición</button>
+            <button id="registro" class="btn__primary">Nueva transición</button>
         </div>
     </header>
     <main>
@@ -24,7 +24,6 @@
                 <div class="en-sal">Entradas
                     <img src="images/Entradas.svg" alt="Icono">
                 </div>  
-                <div class="price">17.400,00 €</div>
                 <div class="price">17.400,00 €</div>
             </div>
             <div class="target">
@@ -79,5 +78,36 @@
             </table>    
         </div>
     </main>
+
+
+    <div class="modal">
+        <div>
+            
+            <form class="form-register">
+                 <button class="cerrar" type="button">
+                     <img class="cerrar-icono" src="/images/Botão - Fechar.svg" alt="cruz">
+                    </button>
+                <h2>Registrar transacción
+                </h2>
+                <input class="controls" type="text" name="Nombre" id="nombres" placeholder="Nombre">
+                <input class="controls" type="text" name="Precio" id="precios" placeholder="Precio">
+                <div>
+                    <button class="boton" type="button"> 
+                        <img src="images/Entradas1.svg" alt="entradas">
+                        Entrada
+                    </button>
+                    <button class="boton" type="button"> 
+                        <img src="images/Saídas1.svg" alt="salidas">  
+                        Salida
+                    </button>
+                </div>
+                <input class="controls" type="text" name="categoria" id="categorias" placeholder="Categoria">
+                <input class="botons" type="submit" value="Registrar">
+            </form>   
+        </div>
+    </div>
+    
+    
 </body>
+
 </html>
