@@ -19,7 +19,7 @@
         </div>
     </header>
     <main>
-        <div class="container">
+        <div class="container target-col" >
             <div class="target">
                 <div class="en-sal">Entradas
                     <img src="images/Entradas.svg" alt="Icono">
@@ -78,34 +78,31 @@
             </table>    
         </div>
     </main>
-
-
-    <div class="modal">
+    <div class="modal" id="modal">
         <div>
-            
-            <form class="form-register">
-                 <button class="cerrar" type="button">
-                     <img class="cerrar-icono" src="/images/Botão - Fechar.svg" alt="cruz">
-                    </button>
-                <h2>Registrar transacción
-                </h2>
-                <input class="controls" type="text" name="Nombre" id="nombres" placeholder="Nombre">
-                <input class="controls" type="text" name="Precio" id="precios" placeholder="Precio">
-                <div>
-                    <button class="boton" type="button"> 
-                        <img src="images/Entradas1.svg" alt="entradas">
-                        Entrada
-                    </button>
-                    <button class="boton" type="button"> 
-                        <img src="images/Saídas1.svg" alt="salidas">  
-                        Salida
-                    </button>
-                </div>
-                <input class="controls" type="text" name="categoria" id="categorias" placeholder="Categoria">
-                <input class="botons" type="submit" value="Registrar">
-            </form>   
+          <form class="form-register">
+            <h2>Registrar transacción</h2>
+            <button class="cerrar" type="button">
+              <img  src="/images/Botão - Fechar.svg" alt="cruz">
+            </button>
+            <input class="controls" type="text" name="Nombre" id="nombres" placeholder="Nombre">
+            <input class="controls" type="text" name="Precio" id="precios" placeholder="Precio">
+            <div>
+              <button class="boton" type="button">
+                <img src="images/Entradas1.svg" alt="entradas">
+                Entrada
+              </button>
+              <button class="boton" type="button">
+                <img src="images/Saídas1.svg" alt="salidas">  
+                Salida
+              </button>
+            </div>
+            <input class="controls" type="text" name="categoria" id="categorias" placeholder="Categoria">
+            <input class="botons" type="submit" value="Registrar">
+          </form>   
         </div>
-    </div>
+      </div>
+      
     
     
 </body>
